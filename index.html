@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JotaGrind Studio — AI-Powered Tattoo Booking</title>
+  <meta name="description" content="Premium tattoo studio with AI-powered appointment booking." />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">JotaGrind<span> Studio</span></span>
+    <a href="#booking" class="nav-cta">Book Now</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Est. 2019 · AI-Powered Studio</p>
+        <h1 class="hero-headline">
+          Book your<br />tattoo<br /><em>consultation.</em>
+        </h1>
+        <p class="hero-sub">
+          AI-powered appointment system<br />
+          for modern tattoo studios.
+        </p>
+        <a href="#booking" class="hero-cta">
+          Start your project &nbsp;→
+        </a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- CINEMATIC IMAGE — tattoo artist at work -->
+    <section id="cinematic">
+      <img
+        src="tattoo-3-artist-work.jpg"
+        alt="JotaGrind tattoo artist at work"
+        loading="lazy"
+      />
+      <div class="cinematic-caption">
+        <p>JotaGrind Studio · Since 2019</p>
+        <strong>Where skin becomes art.</strong>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="gallery-header">
+        <div class="gallery-header-left">
+          <p class="section-label">Portfolio</p>
+          <h2 class="section-title">Our Work</h2>
+        </div>
+        <span class="gallery-count">06</span>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Card 1 — tall (spans 2 rows): Realism sleeve -->
+        <div class="card">
+          <img src="tattoo-1-realism-sleeve.jpg" alt="Realism sleeve tattoo" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-style">Black & Grey Realism</span>
+            <span class="card-title">Zeus Rage Sleeve</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Blindfold woman -->
+        <div class="card">
+          <img src="tattoo-2-blindfold.jpg" alt="Blindfold woman tattoo sleeve" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-style">Fine Detail</span>
+            <span class="card-title">Blind Justice</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Dragon skull -->
+        <div class="card">
+          <img src="tattoo-5-dragon-skull.jpg" alt="Dragon skull tattoo" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-style">Japanese · Dark</span>
+            <span class="card-title">Dragon Skull</span>
+          </div>
+        </div>
+
+        <!-- Card 4 — tall (spans 2 rows): Poseidon -->
+        <div class="card">
+          <img src="tattoo-6-poseidon.jpg" alt="Poseidon tattoo" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-style">Mythological</span>
+            <span class="card-title">Poseidon's Wrath</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Eye hand -->
+        <div class="card">
+          <img src="tattoo-4-eye-hand.jpg" alt="Eye hand tattoo" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-style">Blackwork</span>
+            <span class="card-title">All-Seeing Eye</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Artist working -->
+        <div class="card">
+          <img src="tattoo-3-artist-work.jpg" alt="Tattoo artist working" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-style">Behind the Art</span>
+            <span class="card-title">The Process</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking">
+      <div class="booking-inner">
+
+        <div class="booking-info">
+          <p class="section-label">Intelligent Booking</p>
+          <h2 class="section-title">Start Your<br /><em style="font-style:italic;color:var(--accent)">Journey</em></h2>
+          <p>
+            Your idea is analyzed by AI, matched to the right artist, 
+            and a personalized response lands in your inbox within 24 hours.
+          </p>
+          <div class="info-steps">
+            <div class="step">
+              <span class="step-num">01</span>
+              <div class="step-text">
+                <strong>Submit your idea</strong>
+                <span>Describe the vision — style, placement, budget</span>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">02</span>
+              <div class="step-text">
+                <strong>AI scores your request</strong>
+                <span>Gemini analyzes intent, budget, and fit</span>
+              </div>
+            </div>
+            <div class="step">
+              <span class="step-num">03</span>
+              <div class="step-text">
+                <strong>We respond within 24h</strong>
+                <span>Pricing, availability, and artist match</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form" id="bookingForm">
+          <form id="consultationForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Alex Carter" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="idea">Tattoo Idea</label>
+              <textarea id="idea" name="idea" placeholder="Describe your design — references, imagery, meaning, mood..." required></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="placement">Placement</label>
+                <select id="placement" name="placement" required>
+                  <option value="" disabled selected>Select area</option>
+                  <option value="arm">Arm</option>
+                  <option value="back">Back</option>
+                  <option value="chest">Chest</option>
+                  <option value="leg">Leg</option>
+                  <option value="neck">Neck</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget" required>
+                  <option value="" disabled selected>Select range</option>
+                  <option value="100-300">$100 – $300</option>
+                  <option value="300-600">$300 – $600</option>
+                  <option value="600-1000">$600 – $1,000</option>
+                  <option value="1000+">$1,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span id="btnText">Request consultation →</span>
+            </button>
+
+            <p class="trust-note">🔒 Responses within 24 hours · No commitment required</p>
+
+          </form>
+
+          <div class="success-msg" id="successMsg">
+            <p>
+              <strong>✓ Consultation requested.</strong> Our AI has analyzed your submission — 
+              you'll receive a personalized response within 24 hours.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">JotaGrind<span> Studio</span></span>
+    <span class="footer-powered">Powered by AI · Automated Booking System</span>
+    <span class="footer-year">© 2025</span>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Intersection observer
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        if (entry.target.classList.contains('card')) {
+          document.querySelectorAll('.card').forEach((c, i) => {
+            if (!c.classList.contains('visible'))
+              setTimeout(() => c.classList.add('visible'), i * 110);
+          });
+        }
+        if (entry.target.id === 'bookingForm') entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.card').forEach(c => io.observe(c));
+    const bf = document.getElementById('bookingForm');
+    if (bf) io.observe(bf);
+
+    // Form
+    const form    = document.getElementById('consultationForm');
+    const btn     = document.getElementById('submitBtn');
+    const btnText = document.getElementById('btnText');
+    const msg     = document.getElementById('successMsg');
+
+    document.getElementById('date').setAttribute('min', new Date().toISOString().split('T')[0]);
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let valid = true;
+      form.querySelectorAll('[required]').forEach(f => {
+        f.style.borderColor = '';
+        if (!f.value.trim()) { f.style.borderColor = 'rgba(160,40,40,0.55)'; valid = false; }
+      });
+      if (!valid) return;
+      btn.disabled = true;
+      btnText.textContent = 'Analyzing your request...';
+      setTimeout(() => {
+        form.style.display = 'none';
+        msg.classList.add('show');
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
