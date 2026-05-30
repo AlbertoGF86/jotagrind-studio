@@ -355,10 +355,9 @@ nav {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 420px);
   gap: 0.7rem;
 }
-.gallery-grid .card:nth-child(1) { grid-row: span 2; }
-.gallery-grid .card:nth-child(4) { grid-row: span 2; }
 
 .card {
   position: relative;
@@ -368,10 +367,7 @@ nav {
   transform: translateY(20px);
   transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
   background: var(--surface-2);
-  min-height: 260px;
 }
-.gallery-grid .card:nth-child(1),
-.gallery-grid .card:nth-child(4) { min-height: 530px; }
 .card.visible { opacity: 1; transform: translateY(0); }
 
 .card img {
@@ -644,8 +640,8 @@ footer {
   #hero { padding: 140px 6vw 100px; }
   #gallery { padding: 4.5rem 1.5rem; }
   .gallery-header { flex-direction: column; align-items: flex-start; gap: 0; }
-  .gallery-grid { grid-template-columns: 1fr; gap: 0.6rem; }
-  .card { min-height: 270px !important; }
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: none; gap: 0.6rem; }
+  .card { height: 300px; }
   .card-overlay { opacity: 1; }
   #cinematic { height: 52vh; }
   .cinematic-caption { right: 1.5rem; bottom: 2rem; }
